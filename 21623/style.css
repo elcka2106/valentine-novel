@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #ffe6f0, #ffffff);
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* Floating Hearts */
+
+.heart {
+  position: fixed;
+  bottom: -10px;
+  font-size: 20px;
+  color: rgba(255, 0, 100, 0.4);
+  animation: floatUp 8s linear infinite;
+}
+
+@keyframes floatUp {
+  0% { transform: translateY(0) scale(1); opacity: 1; }
+  100% { transform: translateY(-100vh) scale(1.5); opacity: 0; }
+}
+
+.container {
+  padding: 30px 20px;
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  color: #e91e63;
+  margin-bottom: 10px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 40px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(255, 0, 100, 0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #e91e63;
+}
+
+.card p {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  color: #777;
+}
+
+button {
+  background: #ff4d88;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #e91e63;
+}
+
+/* Form */
+
+/* Intro Section */
+.intro {
+  height: 100vh;
+  background: linear-gradient(135deg, #ffccd5, #ffffff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.intro.hide {
+  opacity: 0;
+  transform: scale(1.1);
+  pointer-events: none;
+}
+
+.intro-content {
+  max-width: 500px;
+}
+
+.romantic-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  color: #e91e63;
+  margin-bottom: 20px;
+}
+
+.romantic-text {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.hidden {
+  display: none;
+}
+
+.hide {
+  opacity: 0;
+  transform: scale(1.1);
+  transition: 0.8s;
+  pointer-events: none;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Music Button */
+.music-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #ff4d88;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: 0.3s;
+  z-index: 999;
+}
+
+.music-btn:hover {
+  background: #e91e63;
+  transform: scale(1.1);
+}
+

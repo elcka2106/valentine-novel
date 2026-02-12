@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Valentine ❤️</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Intro Section -->
+<div class="intro" id="intro">
+  <div class="intro-content">
+    <h1 class="romantic-title">Hai sayangku</h1>
+    <p class="romantic-text">
+      Hari ini katanya Valentine ya, sebenernya ga perlu 14 feb aja buat nunjukin rasa sayangku ke kamu, tapi hari ini aku mau bikin kamu senyum hehe 💕
+    </p>
+    <button id="startBtn">Lihat Hadiah 💝</button>
+
+  </div>
+</div>
+
+<!-- Main Content -->
+<div class="container hidden" id="mainContent">
+  <h1>Happy Valentine ❤️</h1>
+  <p class="subtitle">Coba dipilih mana yang pengen kamu pengen.</p>
+
+  <div class="cards">
+    <div class="card">
+      <img src="ice cream.jpg">
+      <h3>Ice Cream</h3>
+      <p>Dingin tapi mampu menghangatkanmu.</p>
+      <button class= "gift-btn" data-gift="ice cream">Pilih Hadiah Ini</button>
+    </div>
+    <div class="card">
+      <img src="coklat.jpg">
+      <h3>Cokelat </h3>
+      <p>Cokelat manis untuk hari yang manis.</p>
+      <button class= "gift-btn" data-gift="Cokelat">Pilih Hadiah Ini</button>
+    </div>
+    <div class="card">
+      <img src="sushi.jpg">
+      <h3>Sushi</h3>
+      <p>Simbol cinta yang mengenyangkan.</p>
+      <button class= "gift-btn" data-gift="Sushi">Pilih Hadiah Ini</button>
+    </div>
+
+ </div> 
+</div>
+
+<script src="script.js"></script>
+
+<!-- Romantic Music -->
+<audio id="bgMusic" loop>
+  <source src="BIW.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Music Control Button -->
+<button id="musicControl" class="music-btn">🎵</button>
+
+</body>
+</html>
